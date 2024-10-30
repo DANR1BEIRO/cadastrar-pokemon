@@ -29,14 +29,9 @@ def cadastrar_pokemon():
     return pokemon(nome, level, hp)
 
 def mostrar_matriz(matriz_pokemon):
-    print("Pokémon(s) cadastrado(s) com sucesso:")
+    print("Pokemón(s) cadastrado(s) com sucesso:")
     for nome, level, hp in matriz_pokemon:
-        print("")
-        print("-" * 15)
-        print(f"Nome: {nome}")
-        print(f"Level: {level}")
-        print(f"HP: {hp}")
-        print("-" * 15)
+        print(f"\nNome: {nome}\nLevel: {level}\nHP: {hp}\n{"-" * 15}")
 
 # função principal
 def principal():
