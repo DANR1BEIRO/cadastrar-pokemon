@@ -31,6 +31,8 @@ def cadastrar_pokemon():
 def mostrar_matriz(matriz_pokemon):
     print("Pokémon(s) cadastrado(s) com sucesso:")
     for nome, level, hp in matriz_pokemon:
+        print("")
+        print("-" * 15)
         print(f"Nome: {nome}")
         print(f"Level: {level}")
         print(f"HP: {hp}")
