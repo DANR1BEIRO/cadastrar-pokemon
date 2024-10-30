@@ -27,11 +27,14 @@ def cadastrar_pokemon():
             print('Entrada inválida! Digite apenas números em HP!')
                 
     return pokemon(nome, level, hp)
-                
+
 def mostrar_matriz(matriz_pokemon):
-    print("Pokemón(s) cadastrado(s) com sucesso:")
-    for pokemon in matriz_pokemon:
-        print(pokemon)
+    print("Pokémon(s) cadastrado(s) com sucesso:")
+    for nome, level, hp in matriz_pokemon:
+        print(f"Nome: {nome}")
+        print(f"Level: {level}")
+        print(f"HP: {hp}")
+        print("-" * 15)
 
 # função principal
 def principal():
